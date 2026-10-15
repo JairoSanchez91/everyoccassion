@@ -57,7 +57,7 @@ const GRUPOS = {
   const items = CATALOGO.filter((item) => {
     if (!item.foto) return false;
     if (!tipoDe[item.grupo]) {
-      console.warn(`Every Occasiion: el grupo "${item.grupo}" no existe en GRUPOS (catalogo.js).`);
+      console.warn(`Every Occasion: el grupo "${item.grupo}" no existe en GRUPOS (catalogo.js).`);
       return false;
     }
     return true;

@@ -1,6 +1,6 @@
-# Every Occasiion Landing Page
+# Every Occasion Landing Page
 
-Landing estática para promocionar velas artesanales de Every Occasiion.
+Landing estática para promocionar velas artesanales de Every Occasion.
 
 ## Abrir
 

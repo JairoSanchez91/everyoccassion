@@ -16,7 +16,7 @@ window.applyWhatsAppLinks = (root = document) => {
 window.applyWhatsAppLinks();
 
 if (!hasWhatsApp) {
-  console.warn("Every Occasiion: falta el número de WhatsApp en script.js; los botones apuntan a Instagram.");
+  console.warn("Every Occasion: falta el número de WhatsApp en script.js; los botones apuntan a Instagram.");
 }
 
 // Botón fijo de pedido en móvil: se oculta mientras los botones principales están a la vista.

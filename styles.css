@@ -218,26 +218,12 @@ p {
   min-height: 44px;
 }
 
-.brand-candle {
-  width: 16px;
-  height: 26px;
-  overflow: visible;
-}
-
-.brand-wax {
-  fill: var(--rose);
-}
-
-.brand-wick {
-  stroke: var(--ink);
-  stroke-width: 1.4;
-  stroke-linecap: round;
-}
-
-.brand-flame {
-  fill: var(--amber);
-  transform-origin: 10px 12px;
-  animation: flicker 3.2s ease-in-out infinite;
+.brand-logo {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 0 0 1px var(--line);
 }
 
 @keyframes flicker {
@@ -919,10 +905,30 @@ p {
   font-size: 0.95rem;
 }
 
+.footer-id {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.footer-logo {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 0 0 1px var(--line);
+}
+
 .footer-brand {
   font-family: var(--font-display);
-  font-size: 1.15rem;
+  font-size: 1.2rem;
   color: var(--ink);
+}
+
+.footer-social {
+  display: flex;
+  gap: 8px 24px;
+  margin-left: auto;
 }
 
 .site-footer a {
@@ -930,7 +936,6 @@ p {
   align-items: center;
   gap: 8px;
   min-height: 44px;
-  margin-left: auto;
   color: var(--ink);
 }
 
@@ -978,7 +983,7 @@ p {
     padding-bottom: calc(96px + env(safe-area-inset-bottom));
   }
 
-  .site-footer a {
+  .footer-social {
     margin-left: 0;
   }
 
