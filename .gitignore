@@ -1,0 +1,7 @@
+# Respaldo local y archivos de trabajo
+version-anterior/
+.impeccable/
+.claude/
+
+# Foto original sin comprimir (la página usa las versiones .jpg)
+assets/hero-candles.png

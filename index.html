@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Velas artesanales hechas a mano para regalos, eventos y ocasiones especiales. Elige estilo, color y aroma y pídela por WhatsApp o Instagram."
+    />
+    <meta name="theme-color" content="#fbf6ef" />
+    <title>Every Occasiion | Velas artesanales para cada ocasión</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;1,9..144,400&display=swap"
+    />
+    <link rel="preload" as="image" href="assets/hero-candles-1536.jpg" imagesrcset="assets/hero-candles-900.jpg 900w, assets/hero-candles-1536.jpg 1536w" imagesizes="(min-width: 960px) 55vw, 100vw" />
+    <link rel="stylesheet" href="styles.css" />
+    <script>document.documentElement.classList.add("js");</script>
+  </head>
+  <body>
+    <!-- Iconos (trazos de Lucide, incluidos aquí para no depender de una CDN) -->
+    <svg class="icon-sprite" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+      <symbol id="i-instagram" viewBox="0 0 24 24"><rect width="20" height="20" x="2" y="2" rx="5" ry="5" /><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" /><path d="M17.5 6.5h.01" /></symbol>
+      <symbol id="i-message" viewBox="0 0 24 24"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z" /></symbol>
+      <symbol id="i-arrow-right" viewBox="0 0 24 24"><path d="M5 12h14" /><path d="m12 5 7 7-7 7" /></symbol>
+      <symbol id="i-arrow-up-right" viewBox="0 0 24 24"><path d="M7 7h10v10" /><path d="M7 17 17 7" /></symbol>
+      <symbol id="i-cake" viewBox="0 0 24 24"><path d="M20 21v-8a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8" /><path d="M4 16s.5-1 2-1 2.5 2 4 2 2.5-2 4-2 2.5 2 4 2 2-1 2-1" /><path d="M2 21h20" /><path d="M7 8v3" /><path d="M12 8v3" /><path d="M17 8v3" /><path d="M7 4h.01" /><path d="M12 4h.01" /><path d="M17 4h.01" /></symbol>
+      <symbol id="i-heart" viewBox="0 0 24 24"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" /></symbol>
+      <symbol id="i-gift" viewBox="0 0 24 24"><rect x="3" y="8" width="18" height="4" rx="1" /><path d="M12 8v13" /><path d="M19 12v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-7" /><path d="M7.5 8a2.5 2.5 0 0 1 0-5A4.8 8 0 0 1 12 8a4.8 8 0 0 1 4.5-5 2.5 2.5 0 0 1 0 5" /></symbol>
+      <symbol id="i-sparkles" viewBox="0 0 24 24"><path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z" /><path d="M20 3v4" /><path d="M22 5h-4" /><path d="M4 17v2" /><path d="M5 18H3" /></symbol>
+      <symbol id="i-house" viewBox="0 0 24 24"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8" /><path d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" /></symbol>
+      <symbol id="i-flower" viewBox="0 0 24 24"><path d="M12 5a3 3 0 1 1 3 3m-3-3a3 3 0 1 0-3 3m3-3v1M9 8a3 3 0 1 0 3 3M9 8h1m5 0a3 3 0 1 1-3 3m3-3h-1m-2 3v-1" /><circle cx="12" cy="8" r="2" /><path d="M12 10v12" /><path d="M12 22c4.2 0 7-1.667 7-5-4.2 0-7 1.667-7 5Z" /><path d="M12 22c-4.2 0-7-1.667-7-5 4.2 0 7 1.667 7 5Z" /></symbol>
+      <symbol id="i-flame" viewBox="0 0 24 24"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z" /></symbol>
+    </svg>
+
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+    <header class="site-header">
+      <a class="brand" href="#inicio" aria-label="Every Occasiion, ir al inicio">
+        <svg class="brand-candle" viewBox="0 0 20 32" aria-hidden="true">
+          <path class="brand-flame" d="M10 1c2.6 3.4 3.6 5.6 3.6 7.4A3.6 3.6 0 0 1 10 12a3.6 3.6 0 0 1-3.6-3.6C6.4 6.6 7.4 4.4 10 1Z" />
+          <path class="brand-wick" d="M10 12v3" />
+          <rect class="brand-wax" x="4" y="15" width="12" height="16" rx="2" />
+        </svg>
+        <span>Every Occasiion</span>
+      </a>
+      <nav class="nav-links" aria-label="Secciones">
+        <a href="#catalogo" data-requires-catalogo hidden>Catálogo</a>
+        <a href="#estilos">Estilos</a>
+        <a href="#ocasiones">Ocasiones</a>
+        <a href="#como-pedir">Cómo pedir</a>
+      </nav>
+      <a class="button small primary" href="https://www.instagram.com/everyoccasiion" data-wa-text="Hola, quiero pedir una vela de Every Occasiion" target="_blank" rel="noreferrer">
+        <svg class="icon" aria-hidden="true"><use href="#i-message" /></svg>
+        Pedir
+      </a>
+    </header>
+
+    <main id="inicio">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy" id="contenido">
+          <p class="kicker">
+            <svg class="icon" aria-hidden="true"><use href="#i-flame" /></svg>
+            Velas artesanales hechas a mano
+          </p>
+          <h1 id="hero-title">Una vela pensada para <em>cada ocasión.</em></h1>
+          <p class="hero-lede">
+            Elige la forma, el color y el aroma. La hacemos a mano
+            y te la entregamos lista para ese día.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="https://www.instagram.com/everyoccasiion" data-wa-text="Hola, quiero pedir una vela personalizada de Every Occasiion" target="_blank" rel="noreferrer">
+              <svg class="icon" aria-hidden="true"><use href="#i-message" /></svg>
+              Pedir por WhatsApp
+            </a>
+            <a class="button ghost" href="https://www.instagram.com/everyoccasiion" target="_blank" rel="noreferrer">
+              <svg class="icon" aria-hidden="true"><use href="#i-instagram" /></svg>
+              Ver en Instagram
+            </a>
+          </div>
+          <!-- DATOS PENDIENTES: reemplaza cada ___ con la información real -->
+          <dl class="essentials" aria-label="Lo esencial para pedir">
+            <div><dt>Desde</dt><dd>$___ MXN</dd></div>
+            <div><dt>Elaboración</dt><dd>___ días hábiles</dd></div>
+            <div><dt>Entregas</dt><dd>En ___</dd></div>
+            <div><dt>Pago</dt><dd>___</dd></div>
+          </dl>
+        </div>
+        <figure class="hero-media">
+          <img
+            src="assets/hero-candles-1536.jpg"
+            srcset="assets/hero-candles-900.jpg 900w, assets/hero-candles-1536.jpg 1536w"
+            sizes="(min-width: 960px) 55vw, 100vw"
+            width="1536"
+            height="1024"
+            fetchpriority="high"
+            alt="Tres velas artesanales sobre una charola: una en forma de arco color marfil, una acanalada rosa y una en vaso encendida, junto a flores secas y listón de regalo"
+          />
+        </figure>
+      </section>
+
+      <section class="section catalog" id="catalogo" aria-labelledby="catalogo-title" hidden>
+        <div class="section-heading">
+          <p class="kicker">Catálogo</p>
+          <h2 id="catalogo-title">Velas que ya hemos hecho</h2>
+          <p>Inspírate en estos trabajos. Pide una igual o cuéntanos qué te gustaría cambiar.</p>
+        </div>
+        <div class="catalog-tabs" role="group" aria-label="Tipo de ocasión"></div>
+        <div class="catalog-chips" role="group" aria-label="Filtrar por ocasión"></div>
+        <ul class="catalog-grid" aria-live="polite"></ul>
+      </section>
+
+      <section class="section" id="estilos" aria-labelledby="estilos-title">
+        <div class="section-heading">
+          <p class="kicker">Estilos</p>
+          <h2 id="estilos-title">Tres formas, cualquier color</h2>
+          <p>Cada estilo se puede hacer en la paleta, el aroma y con el mensaje que elijas.</p>
+        </div>
+
+        <div class="style-grid">
+          <article class="style-card reveal">
+            <svg class="style-art" viewBox="0 0 120 120" aria-hidden="true">
+              <path class="wax-ivory" d="M28 108V62a32 32 0 0 1 64 0v46Z" />
+              <path class="groove" d="M38 108V62a22 22 0 0 1 44 0v46M48 108V62a12 12 0 0 1 24 0v46M58 108V62a2 2 0 0 1 4 0v46" />
+              <path class="wick" d="M60 30v-8" />
+            </svg>
+            <h3>Arco</h3>
+            <p>Escultural y decorativa. Ideal para repisas, mesas de regalos y recuerdos de evento.</p>
+            <a class="card-link" href="https://www.instagram.com/everyoccasiion" data-wa-text="Hola, me interesa la vela en forma de arco" target="_blank" rel="noreferrer">
+              Pedir este estilo <svg class="icon" aria-hidden="true"><use href="#i-arrow-right" /></svg>
+            </a>
+          </article>
+
+          <article class="style-card reveal">
+            <svg class="style-art" viewBox="0 0 120 120" aria-hidden="true">
+              <path class="wax-rose" d="M30 108 34 52h52l4 56Z" />
+              <path class="groove" d="M40 54 38 106M50 54l-1 52M60 54v52M70 54l1 52M80 54l2 52" />
+              <path class="wick" d="M60 52v-10" />
+            </svg>
+            <h3>Acanalada</h3>
+            <p>Textura de pliegues suaves. Se ve increíble en grupo como centro de mesa.</p>
+            <a class="card-link" href="https://www.instagram.com/everyoccasiion" data-wa-text="Hola, me interesa la vela acanalada" target="_blank" rel="noreferrer">
+              Pedir este estilo <svg class="icon" aria-hidden="true"><use href="#i-arrow-right" /></svg>
+            </a>
+          </article>
+
+          <article class="style-card reveal">
+            <svg class="style-art" viewBox="0 0 120 120" aria-hidden="true">
+              <path class="flame-glow" d="M60 18c5 6 7 10 7 13.5a7 7 0 0 1-14 0C53 28 55 24 60 18Z" />
+              <path class="wick" d="M60 38v6" />
+              <rect class="glass" x="30" y="44" width="60" height="64" rx="8" />
+              <rect class="wax-ivory" x="34" y="56" width="52" height="48" rx="5" />
+            </svg>
+            <h3>En vaso</h3>
+            <p>Clásica y aromática. Para regalar en el día a día o para tu propio espacio.</p>
+            <a class="card-link" href="https://www.instagram.com/everyoccasiion" data-wa-text="Hola, me interesa la vela en vaso" target="_blank" rel="noreferrer">
+              Pedir este estilo <svg class="icon" aria-hidden="true"><use href="#i-arrow-right" /></svg>
+            </a>
+          </article>
+        </div>
+
+        <div class="palette reveal" aria-labelledby="paleta-title">
+          <h3 id="paleta-title">Colores favoritos</h3>
+          <ul>
+            <li><span class="swatch" style="--swatch: #f4ecdf"></span>Marfil</li>
+            <li><span class="swatch" style="--swatch: #d98e80"></span>Rosa palo</li>
+            <li><span class="swatch" style="--swatch: #e9c9a4"></span>Durazno</li>
+            <li><span class="swatch" style="--swatch: #a3ad94"></span>Salvia</li>
+            <li><span class="swatch" style="--swatch: #d8a454"></span>Ámbar</li>
+          </ul>
+          <p>¿Buscas otro tono? Mándanos una foto de referencia y buscamos el tono más cercano.</p>
+        </div>
+      </section>
+
+      <section class="section tinted" id="ocasiones" aria-labelledby="ocasiones-title">
+        <div class="section-heading">
+          <p class="kicker">Ocasiones</p>
+          <h2 id="ocasiones-title">¿Para qué la necesitas?</h2>
+          <p>Toca una ocasión y se abre WhatsApp con tu mensaje listo. Te respondemos con ideas y precio.</p>
+        </div>
+        <ul class="occasion-grid">
+          <li><a href="https://www.instagram.com/everyoccasiion" data-wa-text="Hola, quiero velas para un cumpleaños" target="_blank" rel="noreferrer"><svg class="icon" aria-hidden="true"><use href="#i-cake" /></svg><span>Cumpleaños</span><svg class="icon go" aria-hidden="true"><use href="#i-arrow-up-right" /></svg></a></li>
+          <li><a href="https://www.instagram.com/everyoccasiion" data-wa-text="Hola, quiero velas para un aniversario" target="_blank" rel="noreferrer"><svg class="icon" aria-hidden="true"><use href="#i-heart" /></svg><span>Aniversario</span><svg class="icon go" aria-hidden="true"><use href="#i-arrow-up-right" /></svg></a></li>
+          <li><a href="https://www.instagram.com/everyoccasiion" data-wa-text="Hola, quiero una vela para regalar" target="_blank" rel="noreferrer"><svg class="icon" aria-hidden="true"><use href="#i-gift" /></svg><span>Regalo</span><svg class="icon go" aria-hidden="true"><use href="#i-arrow-up-right" /></svg></a></li>
+          <li><a href="https://www.instagram.com/everyoccasiion" data-wa-text="Hola, quiero cotizar velas como recuerdo para un evento" target="_blank" rel="noreferrer"><svg class="icon" aria-hidden="true"><use href="#i-sparkles" /></svg><span>Recuerdos de evento</span><svg class="icon go" aria-hidden="true"><use href="#i-arrow-up-right" /></svg></a></li>
+          <li><a href="https://www.instagram.com/everyoccasiion" data-wa-text="Hola, quiero velas para decorar mi espacio" target="_blank" rel="noreferrer"><svg class="icon" aria-hidden="true"><use href="#i-house" /></svg><span>Decoración</span><svg class="icon go" aria-hidden="true"><use href="#i-arrow-up-right" /></svg></a></li>
+          <li><a href="https://www.instagram.com/everyoccasiion" data-wa-text="Hola, quiero velas con detalles florales" target="_blank" rel="noreferrer"><svg class="icon" aria-hidden="true"><use href="#i-flower" /></svg><span>Con flores secas</span><svg class="icon go" aria-hidden="true"><use href="#i-arrow-up-right" /></svg></a></li>
+        </ul>
+      </section>
+
+      <section class="section" id="como-pedir" aria-labelledby="pedir-title">
+        <div class="section-heading">
+          <p class="kicker">Cómo pedir</p>
+          <h2 id="pedir-title">Tres mensajes y listo</h2>
+        </div>
+        <ol class="steps">
+          <li class="reveal">
+            <span class="step-num" aria-hidden="true">1</span>
+            <h3>Cuéntanos la ocasión</h3>
+            <p>Para quién es, cuántas piezas necesitas y para qué fecha.</p>
+          </li>
+          <li class="reveal">
+            <span class="step-num" aria-hidden="true">2</span>
+            <h3>Elige estilo y detalles</h3>
+            <p>Forma, color, aroma, mensaje y empaque. Te mandamos propuesta y precio.</p>
+          </li>
+          <li class="reveal">
+            <span class="step-num" aria-hidden="true">3</span>
+            <h3>Confirma y recibe</h3>
+            <p>Confirmas tu pedido, la elaboramos y agendamos la entrega.</p>
+          </li>
+        </ol>
+      </section>
+
+      <section class="final-cta" aria-labelledby="cta-title">
+        <div class="final-cta-inner reveal">
+          <svg class="cta-flame" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-flame" /></svg>
+          <h2 id="cta-title">Hagamos la vela para ese día.</h2>
+          <p>Escríbenos y te respondemos con diseño, precio y fecha de entrega.</p>
+          <div class="hero-actions">
+            <a class="button light" href="https://www.instagram.com/everyoccasiion" data-wa-text="Hola, quiero pedir una vela personalizada" target="_blank" rel="noreferrer">
+              <svg class="icon" aria-hidden="true"><use href="#i-message" /></svg>
+              Pedir por WhatsApp
+            </a>
+            <a class="button ghost-light" href="https://www.instagram.com/everyoccasiion" target="_blank" rel="noreferrer">
+              <svg class="icon" aria-hidden="true"><use href="#i-instagram" /></svg>
+              @everyoccasiion
+            </a>
+          </div>
+          <!-- DATOS PENDIENTES: reemplaza cada ___ con la información real -->
+          <p class="cta-essentials">Desde $___ MXN · ___ días hábiles de elaboración · Entregas en ___</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p class="footer-brand">Every Occasiion</p>
+      <p>Velas artesanales hechas a mano</p>
+      <a href="https://www.instagram.com/everyoccasiion" target="_blank" rel="noreferrer">
+        <svg class="icon" aria-hidden="true"><use href="#i-instagram" /></svg>
+        @everyoccasiion
+      </a>
+    </footer>
+
+    <a class="sticky-order is-hidden" href="https://www.instagram.com/everyoccasiion" data-wa-text="Hola, quiero pedir una vela de Every Occasiion" target="_blank" rel="noreferrer">
+      <svg class="icon" aria-hidden="true"><use href="#i-message" /></svg>
+      Pedir por WhatsApp
+    </a>
+
+    <script src="script.js"></script>
+    <script src="catalogo.js"></script>
+  </body>
+</html>
