@@ -460,6 +460,39 @@ p {
   stroke-width: 1.2;
 }
 
+.style-art .wax-rose-dark {
+  fill: #c97a6c;
+}
+
+.style-art .ribbon {
+  stroke: var(--paper);
+  stroke-width: 8;
+}
+
+.style-art .ribbon-bow {
+  fill: #c97a6c;
+  stroke: var(--paper);
+  stroke-width: 2;
+}
+
+.style-art .wax-peach {
+  fill: #f1d3a8;
+  stroke: rgba(43, 30, 24, 0.18);
+  stroke-width: 1.2;
+}
+
+.style-art .snout {
+  fill: #f8e6c9;
+}
+
+.style-art .face {
+  fill: var(--ink);
+}
+
+.style-art .liquid {
+  fill: #e4c7dd;
+}
+
 .style-art .wick {
   stroke: var(--ink);
   stroke-width: 2;
@@ -702,6 +735,13 @@ p {
   display: inline-flex;
   align-items: center;
   gap: 10px;
+}
+
+.palette li .icon {
+  width: 18px;
+  height: 18px;
+  color: var(--sage-ink);
+  stroke-width: 2.2;
 }
 
 .swatch {

@@ -1,6 +1,6 @@
 # Every Occasion Landing Page
 
-Landing estática para promocionar velas artesanales de Every Occasion.
+Landing estática de Every Occasion: recuerdos y obsequios personalizados (velas con forma, recuerditos para eventos y fragancias).
 
 ## Abrir
 
@@ -32,7 +32,7 @@ Mientras `CATALOGO` esté vacío, la sección y su enlace del menú no aparecen.
 
 ## Secciones
 
-- `#estilos`: los tres estilos de la foto (arco, acanalada, en vaso) y la paleta de colores. Aquí puede crecer el catálogo con precios, aromas y medidas.
+- `#productos`: qué hacen (recuerdos para eventos, velas con forma, fragancias) y qué se personaliza.
 - `#ocasiones`: cada ocasión abre WhatsApp con un mensaje ya escrito.
 - `#como-pedir`: los tres pasos del pedido.
 

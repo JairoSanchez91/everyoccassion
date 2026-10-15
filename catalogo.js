@@ -126,7 +126,7 @@ const GRUPOS = {
       .filter((item) => grupoActual === "todas" || item.grupo === grupoActual)
       .forEach((item) => {
         const grupo = nombreDe[item.grupo];
-        const titulo = item.nombre || `Vela para ${grupo}`;
+        const titulo = item.nombre || `Diseño para ${grupo}`;
 
         const card = document.createElement("li");
         card.className = "catalog-card";
@@ -134,7 +134,7 @@ const GRUPOS = {
         const figure = document.createElement("figure");
         const img = document.createElement("img");
         img.src = item.foto;
-        img.alt = item.nombre ? `${item.nombre}, vela para ${grupo}` : `Vela artesanal para ${grupo}`;
+        img.alt = item.nombre ? `${item.nombre}, para ${grupo}` : `Diseño personalizado para ${grupo}`;
         img.loading = "lazy";
         img.decoding = "async";
         figure.append(img);
@@ -162,7 +162,7 @@ const GRUPOS = {
         link.href = "https://www.instagram.com/everyoccasiion";
         link.target = "_blank";
         link.rel = "noreferrer";
-        link.dataset.waText = `Hola, me interesa una vela como la del catálogo: ${titulo} (${grupo})`;
+        link.dataset.waText = `Hola, me interesa un diseño como el del catálogo: ${titulo} (${grupo})`;
         link.innerHTML = 'Pedir una como esta <svg class="icon" aria-hidden="true"><use href="#i-arrow-right" /></svg>';
         body.append(link);
 
